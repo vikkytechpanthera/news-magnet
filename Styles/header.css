@@ -120,7 +120,7 @@
         font-family: Roboto, Ariel;
         font-size: 12px;
         bottom: -30px;
-        left: -42px;
+        left: 5px;
         opacity: 0;
         transition: opacity 0.15s;
         pointer-events: none;
