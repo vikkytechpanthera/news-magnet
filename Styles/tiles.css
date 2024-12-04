@@ -11,18 +11,19 @@
     height: 1400px;
 }
 
-@media (max-width:750px) {
+@media (max-width:550px) {
     .news-preview-grid {
-        grid-template-columns: 1fr 1fr;
-
+        
+        height: 4000px;
+        align-items: center;
     }
 }
 
-@media (max-width:750px) and @media (min-width:1000px)
+@media (max-width:650px) and @media (min-width:1000px)
 
-@media (min-width:1000px) {
+@media (min-width:800px) {
     .news-preview-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
 
     }
 }  
