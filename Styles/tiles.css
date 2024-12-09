@@ -38,6 +38,10 @@
         flex: 1 1 calc(50% - 20px); /* Two-column layout */
         max-width: calc(50% - 20px); /* Adjust width for gaps */
     }
+
+    .news-title {
+        padding-bottom: 7px;
+    }
 }
 
 /* Media Query for Large Screens (Desktops) */
@@ -50,6 +54,8 @@
         flex: 1 1 calc((100% / 3) - 40px); /* Three-column layout */
         max-width: calc((100% / 3) - 40px);
     }
+
+    
 }
 
 .news-preview {
