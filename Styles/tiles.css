@@ -66,6 +66,7 @@
     width: 100%; /* Allows flexibility */
     margin: 0 auto; /* Center alignment in its flex item */
     box-sizing: border-box;
+    height: fit-content;
 }
 .thumbnail {
     width: 100%;
