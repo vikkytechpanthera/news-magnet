@@ -4,59 +4,14 @@
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    
     height: auto;
     padding: 0 10px; /* Add some padding to avoid edge issues on smaller screens */
     box-sizing: border-box; /* Ensure padding doesn't break the layout */
 }
 
-/* Media Query for Small Screens (Mobile) */
-@media (max-width: 530px) {
-    .news-preview-grid {
-        flex-direction: column;
-        align-items: center;
-        width: fit-content;
-        
-    }
-
-    .news-preview {
-        flex: 1 1 100%; /* Single column layout */
-        max-width: 100%; /* Full width for small screens */
-        
-        margin-bottom: 20px; /* Add space between previews */
-    }
-
-    .news-title {
-        margin-bottom: 25px;
-    }
-}
-
-/* Media Query for Medium Screens (Tablets) */
-@media (max-width: 800px) and (min-width: 531px) {
-    .news-preview {
-        flex: 1 1 calc(50% - 20px); /* Two-column layout */
-        max-width: calc(50% - 20px); /* Adjust width for gaps */
-    }
-
-    .news-title {
-        padding-bottom: 7px;
-    }
-}
-
-/* Media Query for Large Screens (Desktops) */
-@media (min-width: 800px) {
-    .news-preview-grid {
-        justify-content: space-between; /* Even spacing for larger screens */
-    }
-
-    .news-preview {
-        flex: 1 1 calc((100% / 3) - 40px); /* Three-column layout */
-        max-width: calc((100% / 3) - 40px);
-    }
-
-    
-}
 
 .news-preview {
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.491);
@@ -151,4 +106,52 @@
     color: white;
     margin-top: 14px;
     margin-bottom: 10px;
+}
+ 
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 530px) {
+    .news-preview-grid {
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        
+    }
+
+    .news-preview {
+        flex: 1 1 100%; /* Single column layout */
+        max-width: 100%; /* Full width for small screens */
+        
+        flex-shrink: 0;
+        margin-bottom: 20px; /* Add space between previews */
+    }
+
+    .news-title {
+        margin-bottom: 25px;
+    }
+}
+
+/* Media Query for Medium Screens (Tablets) */
+@media (max-width: 800px) and (min-width: 531px) {
+    .news-preview {
+        flex: 1 1 calc(50% - 20px); /* Two-column layout */
+        max-width: calc(50% - 20px); /* Adjust width for gaps */
+    }
+
+    .news-title {
+        padding-bottom: 7px;
+    }
+}
+
+/* Media Query for Large Screens (Desktops) */
+@media (min-width: 800px) {
+    .news-preview-grid {
+        justify-content: space-between; /* Even spacing for larger screens */
+    }
+
+    .news-preview {
+        flex: 1 1 calc((100% / 3) - 40px); /* Three-column layout */
+        max-width: calc((100% / 3) - 40px);
+    }
+
+    
 }
